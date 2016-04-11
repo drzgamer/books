@@ -1,0 +1,20 @@
+<html>
+	<head>
+	</head>
+	<body>
+   		<h1> Show a listing of all books here </h1>
+   		<!--
+   		<% now = Time.now %>
+   		<%= "This is dynamically generated content at: " + now.to_s %>
+		-->
+   		<table>
+			<% @books.each do |book| %>
+				<tr>
+					<td><%= book.title%></td>
+					<td><%= book.author%></td>
+					<td><%= book.price%></td>
+				</tr>
+			<% end %>
+		</table>
+	</body>
+</html>

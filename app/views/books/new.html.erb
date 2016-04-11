@@ -1,0 +1,23 @@
+<html>
+	<head>
+	</head>
+	<body>
+ 		<h1> Show form for creating a new book here </h1>
+ 		<%= "This is dynamically generated content at: #{@time_now}" %>
+ 		
+ 		<%= form_for @book do |b| %>
+ 		<p>
+ 			<%= b.label :title%>
+ 			<%= b.text_field :title%>
+ 		</p>
+ 		<p>
+  			<%= b.label :price%>
+ 			<%= b.text_field :price%>
+ 		</p>
+ 		<p>
+  			<%= b.label :author%>
+ 			<%= b.text_field :author%>
+ 		</p>
+ 		<% end %>
+ 	</body>
+</html>
