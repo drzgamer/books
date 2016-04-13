@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :public_libraries
   resources :books do
     member do
       get 'checkout'
