@@ -746,3 +746,1286 @@ Migrating to CreatePublicLibraries (20160413163336)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160413163336"]]
   [1m[36m (17.7ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:00:07 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (124.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePublicLibraries (20160413165655)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:00:24 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.3ms)
+  [1m[36m (17.0ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (9.2ms)[0m  CREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (31.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (10.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (7.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160413163336')[0m
+  [1m[35m (11.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160406163015')
+  [1m[36m (8.8ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (7.1ms)[0m  CREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (7.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160413163336')[0m
+  [1m[35m (11.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160406163015')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePublicLibraries (20160413165655)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePublicLibraries (20160413165655)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (35.4ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (17.3ms)[0m  CREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (10.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (12.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (11.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160413163336')[0m
+  [1m[35m (10.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160406163015')
+  [1m[36m (9.7ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (12.3ms)[0m  CREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (9.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (15.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160413163336')[0m
+  [1m[35m (8.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160406163015')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePublicLibraries (20160413165655)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (17.9ms)[0m  [1mDROP TABLE "books"[0m
+  [1m[35m (11.2ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (11.0ms)[0m  [1mDROP TABLE "public_libraries"[0m
+  [1m[35m (17.8ms)[0m  CREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (22.7ms)[0m  DROP TABLE "books"
+  [1m[36m (8.7ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (11.6ms)[0m  DROP TABLE "public_libraries"
+  [1m[36m (11.3ms)[0m  [1mCREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:04:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePublicLibraries (20160413165655)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (10.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.5ms)[0m  select sqlite_version(*)
+  [1m[36m (7.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBooks (20160406163015)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160406163015"]]
+  [1m[35m (18.8ms)[0m  commit transaction
+Migrating to CreatePublicLibraries (20160413165655)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160413165655"]]
+  [1m[35m (7.6ms)[0m  commit transaction
+Migrating to DropProducts (20160413170653)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "public_libraries"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160413170653"]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DropProducts (20160413170654)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mDROP TABLE "public_libraries"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePublicLibraries (20160413165656)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "public_libraries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160413165656"]]
+  [1m[36m (16.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:08:56 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicLibrariesController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.9ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:11:05 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicLibrariesController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:11:11 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicLibrariesController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:11:12 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicLibrariesController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:12:03 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicLibrariesController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:12:12 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicLibrariesController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.1ms)
+
+
+Started GET "/public_library" for 146.111.138.234 at 2016-04-13 17:12:18 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/public_library"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (81.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (274.5ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:12:30 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicLibrariesController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:13:07 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2016-04-13 17:13:07.797446"], ["updated_at", "2016-04-13 17:13:07.797446"]]
+  [1m[36m (15.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.4ms)[0m  SELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 18.4ms)
+
+NameError (undefined local variable or method `library' for #<PublicLibraryController:0x0000000483bab8>
+Did you mean?  library2
+               @library):
+  app/controllers/public_library_controller.rb:9:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (131.7ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:13:20 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2016-04-13 17:13:20.502297"], ["updated_at", "2016-04-13 17:13:20.502297"]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.3ms)[0m  SELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "public_libraries" SET "name" = ?, "address" = ?, "updated_at" = ? WHERE "public_libraries"."id" = ?  [["name", "Brooklyn Center"], ["address", "Grand Army Plaza"], ["updated_at", "2016-04-13 17:13:20.521935"], ["id", 1]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  Rendered public_library/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1139ms (Views: 1098.5ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:13:21 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:13:22 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:13:22 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:13:22 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:15:01 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-04-13 17:15:02.008535"], ["updated_at", "2016-04-13 17:15:02.008535"]]
+  [1m[35m (17.0ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.3ms)[0m  [1mSELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.4ms)[0m  SELECT "public_libraries".* FROM "public_libraries"
+  Rendered public_library/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 212ms (Views: 38.1ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:02 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2016-04-13 17:15:10.222076"], ["updated_at", "2016-04-13 17:15:10.222076"]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.4ms)[0m  SELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.3ms)[0m  [1mSELECT "public_libraries".* FROM "public_libraries"[0m
+  Rendered public_library/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 75ms (Views: 42.9ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:15:10 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-04-13 17:17:37.116539"], ["updated_at", "2016-04-13 17:17:37.116539"]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.2ms)[0m  [1mSELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.3ms)[0m  SELECT "public_libraries".* FROM "public_libraries"
+  Rendered public_library/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 30.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2016-04-13 17:17:37.483051"], ["updated_at", "2016-04-13 17:17:37.483051"]]
+  [1m[36m (16.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.2ms)[0m  SELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.3ms)[0m  [1mSELECT "public_libraries".* FROM "public_libraries"[0m
+  Rendered public_library/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 30.8ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:17:37 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-04-13 17:17:37.972124"], ["updated_at", "2016-04-13 17:17:37.972124"]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.2ms)[0m  [1mSELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.2ms)[0m  SELECT "public_libraries".* FROM "public_libraries"
+  Rendered public_library/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 34.0ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2016-04-13 17:17:38.420326"], ["updated_at", "2016-04-13 17:17:38.420326"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.2ms)[0m  SELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.3ms)[0m  [1mSELECT "public_libraries".* FROM "public_libraries"[0m
+  Rendered public_library/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 27.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:17:38 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-04-13 17:17:38.896102"], ["updated_at", "2016-04-13 17:17:38.896102"]]
+  [1m[35m (21.3ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.2ms)[0m  [1mSELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.4ms)[0m  SELECT "public_libraries".* FROM "public_libraries"
+  Rendered public_library/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 57ms (Views: 29.0ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2016-04-13 17:17:39.424229"], ["updated_at", "2016-04-13 17:17:39.424229"]]
+  [1m[36m (15.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.2ms)[0m  SELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.3ms)[0m  [1mSELECT "public_libraries".* FROM "public_libraries"[0m
+  Rendered public_library/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 28.3ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:17:39 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:18:08 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  app/controllers/public_library_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.4ms)
+
+
+Started GET "/public_libraries" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PublicLibraryController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "public_libraries" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-04-13 17:18:29.530564"], ["updated_at", "2016-04-13 17:18:29.530564"]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36mPublicLibrary Load (0.3ms)[0m  [1mSELECT  "public_libraries".* FROM "public_libraries" WHERE "public_libraries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublicLibrary Load (0.4ms)[0m  SELECT "public_libraries".* FROM "public_libraries"
+  Rendered public_library/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 94ms (Views: 55.9ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/assets/public_libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/public_library.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 146.111.138.234 at 2016-04-13 17:18:29 +0000
+Cannot render console from 146.111.138.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

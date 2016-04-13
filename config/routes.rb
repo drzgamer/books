@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   
 
-  resources :public_libraries
   resources :books do
     member do
       get 'checkout'
     end
   end
+  get "public_libraries" => 'public_library#index'
 
   #match ":controller/" => ":controller#index"
   #get ":controller/:action"
