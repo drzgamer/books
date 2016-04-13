@@ -1,0 +1,2 @@
+class PublicLibraryController < ApplicationController
+end
